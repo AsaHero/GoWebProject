@@ -1,3 +1,3 @@
-module github.com/AsaHero/DemoWebPage
+module GoWebProject
 
-go 1.17
+go 1.18
