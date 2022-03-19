@@ -6,8 +6,6 @@ import (
 	"net/http"
 )
 
-<<<<<<< HEAD
-=======
 type User struct {
 	Name    string
 	Age     int16
@@ -15,7 +13,6 @@ type User struct {
 	Hobbies []string
 }
 
->>>>>>> b2710e1db68cb14aa15c2fff8e75ccf3473fedcc
 func mainPage(w http.ResponseWriter, r *http.Request) {
 	tmp, err := template.ParseFiles("views/index.html")
 	if err != nil {
