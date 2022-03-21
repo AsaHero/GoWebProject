@@ -8,7 +8,7 @@ import (
 
 type User struct {
 	Name    string
-	Age     int16
+	Age     int
 	Balance float64
 	Hobbies []string
 }
@@ -18,7 +18,7 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Printf("Error on parcing tamplate: error %v", err)
 	}
-	data := User{"Asadbek", 19, 150.12, []string{"Coding", "Music", "BeatMaking"}}
+	data := User{"Nazarbek", 13, 150.12, []string{"Coding", "Music", "BeatMaking"}}
 	err = tmp.Execute(w, data)
 	if err != nil {
 		fmt.Printf("Error on executing template: error %v", err)
