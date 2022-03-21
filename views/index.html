@@ -8,9 +8,9 @@
     <title>AsaWeb: Main Page</title>
 </head>
 <body> 
-    <!-- <h1>Welcome, {{ .Name }}</h1>
+    <h1>Welcome, {{ .Name }}</h1>
    
-    {{if .Age l 18}}
+    {{if lt .Age 18}}
     <span>You are under 18 years old</span>
     {{end}}
     
@@ -20,7 +20,7 @@
         <li>{{.}}</li>
     {{end}}       
     </ul>
-    <p>Balance: {{.Balance}}</p> -->
+    <p>Balance: {{.Balance}}</p>
 
 </body>    
 </html>
